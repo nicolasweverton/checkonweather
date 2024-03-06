@@ -1,4 +1,4 @@
-const apiKey = 'key';
+const apiKey = '22014577b7a92ec599b2cf2dabea3dc4';
 const locButton = document.querySelector('.loc-button');
 const todayInfo = document.querySelector('.today-info');
 const todayWeatherIcon = document.querySelector('.today-weather i');
@@ -38,8 +38,8 @@ function fetchWeatherData(location) {
         const todayTemperature = `${Math.round(data.list[0].main.temp)}°C`;
         const todayWeatherIconCode = data.list[0].weather[0].icon;
 
-        todayInfo.querySelector('h2').textContent = new Date().toLocaleDateString('en', { weekday: 'long' });
-        todayInfo.querySelector('span').textContent = new Date().toLocaleDateString('en', { day: 'numeric', month: 'long', year: 'numeric' });
+        todayInfo.querySelector('h2').textContent = new Date().toLocaleDateString('br', { weekday: 'long' });
+        todayInfo.querySelector('span').textContent = new Date().toLocaleDateString('br', { day: 'numeric', month: 'long', year: 'numeric' });
         todayWeatherIcon.className = `bx bx-${weatherIconMap[todayWeatherIconCode]}`;
         todayTemp.textContent = todayTemperature;
 
@@ -59,15 +59,15 @@ function fetchWeatherData(location) {
         dayInfoContainer.innerHTML = `
 
             <div>
-                <span class="title">PRECIPITATION</span>
+                <span class="title">PRECIPITAÇÃO</span>
                 <span class="value">${todayPrecipitation}</span>
             </div>
             <div>
-                <span class="title">HUMIDITY</span>
+                <span class="title">UMIDADE</span>
                 <span class="value">${todayHumidity}</span>
             </div>
             <div>
-                <span class="title">WIND SPEED</span>
+                <span class="title">VELOCIDADE DO VENTO</span>
                 <span class="value">${todayWindSpeed}</span>
             </div>
 
@@ -82,7 +82,7 @@ function fetchWeatherData(location) {
         daysList.innerHTML = '';
         for (const dayData of nextDaysData) {
             const forecastDate = new Date(dayData.dt_txt);
-            const dayAbbreviation = forecastDate.toLocaleDateString('en', { weekday: 'short' });
+            const dayAbbreviation = forecastDate.toLocaleDateString('br', { weekday: 'short' });
             const dayTemp = `${Math.round(dayData.main.temp)}°C`;
             const iconCode = dayData.weather[0].icon;
 

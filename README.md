@@ -6,6 +6,7 @@ Este código JavaScript busca dados meteorológicos da API OpenWeatherMap e os e
 - Precipitação (%)
 - Umidade (%)
 - Velocidade do vento (km/h)
+  
 Você precisará substituir "key" por sua própria chave de API do OpenWeatherMap para que o código funcione.
 
 O código utiliza o DOM para manipular elementos HTML na página e atualizar as informações meteorológicas dinamicamente.

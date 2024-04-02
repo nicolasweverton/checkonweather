@@ -117,7 +117,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 locButton.addEventListener('click', () => {
     const location = prompt('Enter a location :');
+    const location = prompt('Busque sua localização');
     if (!location) return;
 
     fetchWeatherData(location);
 });
+
+console.log(location);

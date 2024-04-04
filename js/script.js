@@ -1,4 +1,3 @@
-const apiKey = 'key';
 const locButton = document.querySelector('.loc-button');
 const todayInfo = document.querySelector('.today-info');
 const todayWeatherIcon = document.querySelector('.today-weather i');
@@ -116,7 +115,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 locButton.addEventListener('click', () => {
-    const location = prompt('Enter a location :');
     const location = prompt('Busque sua localização');
     if (!location) return;
 

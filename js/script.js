@@ -1,3 +1,4 @@
+const apiKey = 'sua key';
 const locButton = document.querySelector('.loc-button');
 const todayInfo = document.querySelector('.today-info');
 const todayWeatherIcon = document.querySelector('.today-weather i');
